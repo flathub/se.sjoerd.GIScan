@@ -28,15 +28,18 @@ modules:
       - install -D settings.py /app/bin/settings.py
       - install -D CallUI.py /app/bin/CallUI.py
       - install -D scanning_tools.py /app/bin/scanning_tools.py      
+      - install -D fwhmscan.py /app/bin/fwhmscan.py           
       - install -D sample.py /app/bin/sample.py      
       - install -D plottingtools.py /app/bin/plottingtools.py
       - install -D gisaxs.py /app/bin/gisaxs.py
       - install -D config.json /app/bin/config.json
       - install form.ui /app/bin/form.ui
+      - install fwhmscan_window.ui /app/bin/fwhmscan_window.ui
+      - install fwhmscan_result_window.ui /app/bin/fwhmscan_result_window.ui
       - install settingsdialog.ui /app/bin/settingsdialog.ui
       - install -D runner.sh /app/bin/runner.sh   
     sources:
       - type: git
         url: https://github.com/SjoerdB93/GIScan.git
-        commit: 9ea5cb271a96d36959654ab3f2520337f532aa29
+        commit: c9fcd9ba64f7db65e1c29ca00d9357e4679f03cc
 
