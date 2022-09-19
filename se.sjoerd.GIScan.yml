@@ -13,7 +13,6 @@ finish-args:
   - --device=dri
   
 modules:  
-
   - python3-requirements.json
   - python3-matplotlib.json
   - python3-scipy.json
