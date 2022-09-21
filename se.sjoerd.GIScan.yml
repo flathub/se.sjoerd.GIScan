@@ -1,6 +1,6 @@
 app-id: se.sjoerd.GIScan
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
 base-version: "5.15-21.08"
@@ -40,5 +40,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/SjoerdB93/GIScan.git
-        commit: c5ed74ae20c6679748a11f0ccbcb8817ed8ad5f7
+        commit: 7bdfee16ec5b0209db8fff957ba308bff0dd0338
 
