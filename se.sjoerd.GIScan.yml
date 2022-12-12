@@ -9,7 +9,7 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --share=network
-  - --filesystem=xdg-home
+  - --filesystem=home
   - --device=dri
   
 modules:  
