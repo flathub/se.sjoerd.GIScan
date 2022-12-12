@@ -9,7 +9,7 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --share=network
-  - --filesystem=xdg-documents
+  - --filesystem=home
   - --device=dri
   
 modules:  
@@ -40,5 +40,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/SjoerdB93/GIScan.git
-        commit: 31351fbcad2c4fc1984e756c57d56333fb8f943a
+        commit: d7fea8faac31a74bcb65c07bf3372e9076debeac
 
