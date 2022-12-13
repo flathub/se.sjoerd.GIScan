@@ -5,17 +5,17 @@
     "modules": [
              {
             "name": "python3-cbf",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install 15dbee1353827f52f74d396d617fa3d9653fb6af.tar.gz --prefix=${FLATPAK_DEST} \"cbf\" --no-build-isolation"
-            ],
-         "sources": [
-                {
-                    "type": "file",
-                    "url": "https://github.com/SjoerdB93/cbf/archive/15dbee1353827f52f74d396d617fa3d9653fb6af.tar.gz",
-                    "sha256": "870469a9e5ee6374138c8fa8604ee5a9cdca2e9156cd590ce62cdefd033e33ce"
-                }
-            ]
+              "buildsystem": "simple",
+  "build-commands": [
+    "pip3 install --prefix=${FLATPAK_DEST} ."
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/SjoerdB93/cbf",
+      "commit": "15dbee1353827f52f74d396d617fa3d9653fb6af"
+    }
+  ]
         }
     ]
 }
