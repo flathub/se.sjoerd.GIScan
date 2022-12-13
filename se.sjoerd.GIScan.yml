@@ -1,9 +1,9 @@
 app-id: se.sjoerd.GIScan
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: "5.15-21.08"
+base-version: "5.15-22.08"
 command: runner.sh
 finish-args:
   - --share=ipc
@@ -13,16 +13,19 @@ finish-args:
   - --device=dri
   
 modules:  
+  - python3-numpy.json  
   - python3-requirements.json
-  - python3-matplotlib.json
-  - python3-scipy.json
+  - python3-cbf.json
+  - python3-scipy.json    
+  - python3-matplotlib.json  
         
   - name: GIScan
     buildsystem: simple
     build-commands:
       - install -D se.sjoerd.GIScan.desktop /app/share/applications/se.sjoerd.GIScan.desktop
       - install -D se.sjoerd.GIScan.appdata.xml /app/share/appdata/se.sjoerd.GIScan.appdata.xml
-      - install -D se.sjoerd.GIScan.png /app/share/icons/hicolor/128x128/apps/se.sjoerd.GIScan.png
+      - install -D se.sjoerd.GIScan.svg /app/share/icons/hicolor/scalable/apps/se.sjoerd.GIScan.svg
+      - install -D se.sjoerd.GIScan-symbolic.svg /app/share/icons/hicolor/symbolic/apps/se.sjoerd.GIScan-symbolic.svg      
       - install -D main.py /app/bin/main.py
       - install -D settings.py /app/bin/settings.py
       - install -D CallUI.py /app/bin/CallUI.py
@@ -40,5 +43,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/SjoerdB93/GIScan.git
-        commit: d7fea8faac31a74bcb65c07bf3372e9076debeac
+        commit: f2136d2f25ff7d11c8804a5a95fbdefb68e321f8
 
