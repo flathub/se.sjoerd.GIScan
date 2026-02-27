@@ -42,5 +42,5 @@ modules:
       - install -D runner.sh /app/bin/runner.sh   
     sources:
       - type: git
-        url: https://github.com/SjoerdB93/GIScan.git
-        commit: 0080c2bd4b4c71b11b28cc26b6d28fd570c64c22
+        url: https://github.com/sstendahl/GIScan.git
+        commit: e3393a80db59e78332f6977d969413e908605b05
