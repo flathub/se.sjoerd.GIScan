@@ -1,9 +1,9 @@
 app-id: se.sjoerd.GIScan
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: '5.15-25.08'
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: "5.15-22.08"
+base-version: "5.15-25.08"
 command: runner.sh
 finish-args:
   - --share=ipc
@@ -42,5 +42,5 @@ modules:
       - install -D runner.sh /app/bin/runner.sh   
     sources:
       - type: git
-        url: https://github.com/SjoerdB93/GIScan.git
-        commit: 0080c2bd4b4c71b11b28cc26b6d28fd570c64c22
+        url: https://github.com/sstendahl/GIScan.git
+        commit: 0bf80d4f4b69a960ca985305c7caa5284781464a
