@@ -7,13 +7,13 @@
             "name": "python3-cbf",
               "buildsystem": "simple",
   "build-commands": [
-    "pip3 install --prefix=${FLATPAK_DEST} ."
+    "pip3 install --verbose --no-build-isolation --prefix=${FLATPAK_DEST} ."
   ],
   "sources": [
     {
       "type": "git",
-      "url": "https://github.com/SjoerdB93/cbf",
-      "commit": "15dbee1353827f52f74d396d617fa3d9653fb6af"
+      "url": "https://github.com/paulscherrerinstitute/cbf.git",
+      "commit": "88f4f5b6fdcee5577d1f96c46c27a653c6622e20"
     }
   ]
         }
