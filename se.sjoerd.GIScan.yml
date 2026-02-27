@@ -43,4 +43,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/sstendahl/GIScan.git
-        commit: e3393a80db59e78332f6977d969413e908605b05
+        commit: 0bf80d4f4b69a960ca985305c7caa5284781464a
