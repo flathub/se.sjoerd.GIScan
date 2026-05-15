@@ -11,7 +11,11 @@ finish-args:
   - --share=network
   - --filesystem=home
   - --device=dri
-  
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
+build-options:
+  env:
+    - BASEAPP_REMOVE_PYWEBENGINE=1
 modules:  
   - python3-numpy.json  
   - python3-requirements.json
